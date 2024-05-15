@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-image: url('https://res.cloudinary.com/simpleview/image/upload/v1634555140/clients/norway/Oslo_operahus_2_447c01a6-7d1c-4cd6-a87a-0c38e552a893.jpg');
+    font-size: 120%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+    
+  }
+
+  .header {
+    height: 5.5vh; 
+    padding: 2vh 5%;
+    width: 100%;
+    height: 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #000000d0;
+}
+
+
+
+
+.logo {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 340px; 
+}
+
+
+.navbar a {
+  position: relative;
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+  font-weight: 500; 
+  text-decoration: none;
+  margin-left: 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.navbar {
+    display: flex;  
+    justify-content: space-evenly;
+}
+
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0; 
+    height: 2px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+
+
+
+
+.kontakt {
+    min-height: 60vh;
+    margin-top: 160px;
+    padding: 50px;
+    text-align: center;
+    background-color: #000000d0;
+    border-radius: 20px;
+    padding: 10px;
+    
+
+  }
+
+  /* Her endrer jeg på hvor teksten skal ligge eller divven. */
+  
+
+
+  .container h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    
+    
+    border-radius: 10px;
+  }
+
+  /* Her endrer jeg på teksten kontakt oss, størrelsen på den og fargen. */
+
+  .kontakt-wrapper {
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-gap: 30px; 
+border-radius: 20px;
+padding: 10px;
+  }
+
+  /* Her endrer jeg på mellomrommet på de to elementene altså send oss en melding og kontakt informasjon.
+  grid template columns er en måte å strukturere nettsiden på eller i dette tilfelle de to boksene med informasjonen
+  den ene som er inputfelte og informasjon/kontakt informasjon  */
+
+  .kontakt-form {
+text-align: left;
+  }
+
+/* Her er teksten til venstre altså teksten send oss en melding over skrivefeltene/inputfield*/
+
+  .kontakt-form h3 {
+font-size: 24px;
+margin-bottom: 20px;
+color: #ffffff;
+
+  }
+
+/* Her endrer jeg på størrelsen og fargen på send oss en melding 
+må og spesifisere h3 for å få dette til å funke som altså er teksten */
+
+  .form-gruppe {
+margin-bottom: 20px;
+
+  }
+
+/* Her er mellomrommet mellom inputfielden/skrivefeltene */
+
+  input, textarea { 
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f8f9fa;
+    color: #000000;
+  }
+
+  /* Her endrer jeg border radiusen for å gjøre den rundere og
+   margin bottom som er mellomrummet når det kommer et nytt felt */
+
+  input:focus,
+  textarea:focus{
+  outline:none;
+  box-shadow: 0 0 8px #bbb;
+  }
+
+/* endrer på hva som vises når man trykker på en av boksene og dette er fargen utafor boksen 
+har sagt at det skal være ingenting og det skal og være skygge rundt boksen */
+
+  button{
+    display: flex; 
+    padding: 12px 30px;
+    background-color: #3a00f8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 8px;
+  }
+
+  /* Når man trykker på knappen blir den lysere/endrer farge. 
+  fargen endrer seg etter 0.3s og padding for å endre på boks størrelsen
+  */
+
+  button:hover{
+    background-color: #301fa3;
+  }
+
+  /*  Når man holder over knappen/send melding ender den farge  */
+
+  .kontakt-info {
+    text-align: left;
+    
+  }
+  
+/* Her blir teksten til høyre for send oss en melding mer aligna til venstre  */
+
+  .kontakt-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    box-shadow: #000000;
+    border-radius: 10px;
+    
+  }
+
+  /* Her endrer jeg på størrelsen til kontakt informasjon og fargen på den
+  endrer og skriftstørrelsen */
+
+  .kontakt-info p {
+    margin-bottom: 10px;
+    color: #ffffff;
+
+    border-radius: 10px;
+  }
+
+/* Her endrer jeg på mellomrommet mellom kontakt teksten under kontakt informasjon, 
+nummeret, email og adressen   */
